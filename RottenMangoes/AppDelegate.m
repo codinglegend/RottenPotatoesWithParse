@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import "MasterViewController.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
