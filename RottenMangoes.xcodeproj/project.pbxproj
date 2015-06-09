@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B521684D1B2689B500D83490 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B521684C1B2689B500D83490 /* LogInViewController.m */; };
+		B52168501B2689BE00D83490 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B521684F1B2689BE00D83490 /* SignUpViewController.m */; };
 		B557E21C1B17C73F00AF90BA /* Movies.m in Sources */ = {isa = PBXBuildFile; fileRef = B557E21B1B17C73F00AF90BA /* Movies.m */; };
 		B557E21F1B18EB7300AF90BA /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B557E21E1B18EB7300AF90BA /* CollectionViewCell.m */; };
 		B5E393691B16DE6A00EAC48C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E393681B16DE6A00EAC48C /* main.m */; };
@@ -31,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B521684B1B2689B500D83490 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		B521684C1B2689B500D83490 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		B521684E1B2689BE00D83490 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		B521684F1B2689BE00D83490 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		B557E21A1B17C73F00AF90BA /* Movies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movies.h; sourceTree = "<group>"; };
 		B557E21B1B17C73F00AF90BA /* Movies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movies.m; sourceTree = "<group>"; };
 		B557E21D1B18EB7300AF90BA /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -102,6 +108,10 @@
 				B5E393741B16DE6B00EAC48C /* DetailViewController.m */,
 				B557E21D1B18EB7300AF90BA /* CollectionViewCell.h */,
 				B557E21E1B18EB7300AF90BA /* CollectionViewCell.m */,
+				B521684B1B2689B500D83490 /* LogInViewController.h */,
+				B521684C1B2689B500D83490 /* LogInViewController.m */,
+				B521684E1B2689BE00D83490 /* SignUpViewController.h */,
+				B521684F1B2689BE00D83490 /* SignUpViewController.m */,
 				B5E393761B16DE6B00EAC48C /* Main.storyboard */,
 				B5E393791B16DE6B00EAC48C /* Images.xcassets */,
 				B5E3937B1B16DE6B00EAC48C /* LaunchScreen.xib */,
@@ -237,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B521684D1B2689B500D83490 /* LogInViewController.m in Sources */,
 				B557E21C1B17C73F00AF90BA /* Movies.m in Sources */,
 				B5E393751B16DE6B00EAC48C /* DetailViewController.m in Sources */,
 				B5E393721B16DE6B00EAC48C /* MasterViewController.m in Sources */,
@@ -244,6 +255,7 @@
 				B5E393691B16DE6A00EAC48C /* main.m in Sources */,
 				B557E21F1B18EB7300AF90BA /* CollectionViewCell.m in Sources */,
 				B5E3936F1B16DE6B00EAC48C /* RottenMangoes.xcdatamodeld in Sources */,
+				B52168501B2689BE00D83490 /* SignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

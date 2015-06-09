@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="699" y="171"/>
         </scene>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="bRI-Fo-VT9">
             <objects>
-                <viewController id="NPi-jg-0HK" sceneMemberID="viewController">
+                <viewController id="NPi-jg-0HK" customClass="LogInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wdj-m4-dZU"/>
                         <viewControllerLayoutGuide type="bottom" id="4J8-x1-vKF"/>
@@ -183,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="-51" y="171"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="kJB-Fh-x5n">
             <objects>
-                <viewController id="6BX-vL-GbE" sceneMemberID="viewController">
+                <viewController id="6BX-vL-GbE" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OdT-js-OJe"/>
                         <viewControllerLayoutGuide type="bottom" id="8T4-EV-4wn"/>
@@ -205,16 +205,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-uQ-hKr">
+                                <rect key="frame" x="273" y="341" width="55" height="30"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bO2-Ws-KTu">
                                 <rect key="frame" x="141" y="256" width="310" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-uQ-hKr">
-                                <rect key="frame" x="273" y="302" width="55" height="30"/>
-                                <state key="normal" title="Sign Up">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAR-1M-tP7">
+                                <rect key="frame" x="246" y="308" width="128" height="30"/>
+                                <state key="normal" title="Add Profile Picture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addProfilePicture:" destination="6BX-vL-GbE" eventType="touchUpInside" id="Bqd-vO-evX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
