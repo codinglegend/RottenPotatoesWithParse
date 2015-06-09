@@ -206,7 +206,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-uQ-hKr">
-                                <rect key="frame" x="273" y="341" width="55" height="30"/>
+                                <rect key="frame" x="273" y="429" width="55" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -225,13 +225,22 @@
                                     <action selector="addProfilePicture:" destination="6BX-vL-GbE" eventType="touchUpInside" id="Bqd-vO-evX"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Bj3-Fi-etJ">
+                                <rect key="frame" x="263" y="340" width="75" height="72"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="profilePicture" destination="Bj3-Fi-etJ" id="u2Z-kr-4E8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6rj-Kg-V1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-64" y="-507"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avatar.jpg" width="1280" height="720"/>
+    </resources>
 </document>

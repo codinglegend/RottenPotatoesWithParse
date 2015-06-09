@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B521684D1B2689B500D83490 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B521684C1B2689B500D83490 /* LogInViewController.m */; };
 		B52168501B2689BE00D83490 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B521684F1B2689BE00D83490 /* SignUpViewController.m */; };
+		B52168521B26929A00D83490 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B52168511B26929A00D83490 /* avatar.jpg */; };
 		B557E21C1B17C73F00AF90BA /* Movies.m in Sources */ = {isa = PBXBuildFile; fileRef = B557E21B1B17C73F00AF90BA /* Movies.m */; };
 		B557E21F1B18EB7300AF90BA /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B557E21E1B18EB7300AF90BA /* CollectionViewCell.m */; };
 		B5E393691B16DE6A00EAC48C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E393681B16DE6A00EAC48C /* main.m */; };
@@ -37,6 +38,7 @@
 		B521684C1B2689B500D83490 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		B521684E1B2689BE00D83490 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		B521684F1B2689BE00D83490 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		B52168511B26929A00D83490 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 		B557E21A1B17C73F00AF90BA /* Movies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movies.h; sourceTree = "<group>"; };
 		B557E21B1B17C73F00AF90BA /* Movies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movies.m; sourceTree = "<group>"; };
 		B557E21D1B18EB7300AF90BA /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				B521684E1B2689BE00D83490 /* SignUpViewController.h */,
 				B521684F1B2689BE00D83490 /* SignUpViewController.m */,
 				B5E393761B16DE6B00EAC48C /* Main.storyboard */,
+				B52168511B26929A00D83490 /* avatar.jpg */,
 				B5E393791B16DE6B00EAC48C /* Images.xcassets */,
 				B5E3937B1B16DE6B00EAC48C /* LaunchScreen.xib */,
 				B5E3936D1B16DE6B00EAC48C /* RottenMangoes.xcdatamodeld */,
@@ -227,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52168521B26929A00D83490 /* avatar.jpg in Resources */,
 				B5E393781B16DE6B00EAC48C /* Main.storyboard in Resources */,
 				B5E3937D1B16DE6B00EAC48C /* LaunchScreen.xib in Resources */,
 				B5E3937A1B16DE6B00EAC48C /* Images.xcassets in Resources */,

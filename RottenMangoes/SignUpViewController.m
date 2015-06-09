@@ -9,6 +9,7 @@
 #import "SignUpViewController.h"
 
 @interface SignUpViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *profilePicture;
 
 @end
 
@@ -49,4 +50,19 @@
     // UIImagePicker is a viewcontroller (it's a subclass of UIViewController) even though you can't see it on storyboard
 
 }
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{ // "didFinishMediaWithInfo" means what happens when the photo is chosen
+    
+    self.profilePicture.image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    
+}
 @end
+
+
+
+
+
+
+
