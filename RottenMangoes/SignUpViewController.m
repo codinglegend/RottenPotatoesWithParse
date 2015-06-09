@@ -12,6 +12,12 @@
 @property (weak, nonatomic) IBOutlet UIImageView *profilePicture;
 @property (weak, nonatomic) IBOutlet UIPickerView *criticTypePickerView;
 
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+
+
+
 @end
 
 @implementation SignUpViewController
@@ -25,10 +31,7 @@
 //    [username setObject:<#(id)#> forKey:<#(NSString *)#>];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 /*
 #pragma mark - Navigation
@@ -87,6 +90,28 @@
         title = @"Movie Critic";
     }
     return title;
+}
+
+#pragma mark - Sign Up IBAction
+
+- (IBAction)signUpWasPressed:(UIButton *)sender {
+    NSString *username = self.usernameTextField.text; //text is a property of UITextField (of which usernameTextField is an instance). everything starting at stringByTrimming just ensures no spaces are included in the user input.
+    NSString *password = self.passwordTextField.text;
+    NSString *email = self.emailTextField.text;
+    
+    /*if I wanted to ensure spaces were removed from the user input on both ends the code would look like:
+         NSString *username = [self.usernameTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]; */
+    
+    if ((username.length == 0) || (password.length == 0) || (email.length == 0)){
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!"
+                                                        message:@"Make sure you enter a username, password, and email."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        
+        [alertView show]; // getting the alertView to actually show up
+    }
+    
 }
 
 

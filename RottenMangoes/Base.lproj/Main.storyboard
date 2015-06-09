@@ -224,6 +224,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpWasPressed:" destination="6BX-vL-GbE" eventType="touchUpInside" id="OTS-ce-kBF"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bO2-Ws-KTu">
                                 <rect key="frame" x="145" y="164" width="310" height="30"/>
@@ -253,7 +256,10 @@
                     </view>
                     <connections>
                         <outlet property="criticTypePickerView" destination="5P0-wr-twv" id="til-3B-SAU"/>
+                        <outlet property="emailTextField" destination="bO2-Ws-KTu" id="dgc-FN-UoN"/>
+                        <outlet property="passwordTextField" destination="TTg-wM-vVY" id="J7N-fT-HxH"/>
                         <outlet property="profilePicture" destination="Bj3-Fi-etJ" id="u2Z-kr-4E8"/>
+                        <outlet property="usernameTextField" destination="yNk-PJ-w1M" id="sNM-4D-oxV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6rj-Kg-V1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
