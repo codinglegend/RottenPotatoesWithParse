@@ -18,23 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-//    testObject[@"foo"] = @"bar"; this is the same as the line above just literal notation (less clear as this point)
-    [testObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        
-        
-        //
-        if (error) {
-            NSLog(@"error in saveInBackround is %@", error);
-        }
-        if (succeeded){
-            NSLog(@"Succeeded is: %@", succeeded ? @"True" : @"False"); // not needed just a reference
-        } // keep in mind you can log any parameter as I've done here
-        
-        // [self performSegueWithIdentifier:@"showLogin" sender:self];
-        
-    }];
+
+// testObject code
+//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+//    [testObject setObject:@"bar" forKey:@"foo"];
+////    testObject[@"foo"] = @"bar"; this is the same as the line above just literal notation (less clear as this point)
+//    [testObject save];
+    
+    
+
+    
 
     // Do any additional setup after loading the view.
 }
