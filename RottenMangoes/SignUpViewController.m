@@ -10,6 +10,7 @@
 
 @interface SignUpViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *profilePicture;
+@property (weak, nonatomic) IBOutlet UIPickerView *criticTypePickerView;
 
 @end
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.criticTypePickerView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,6 +36,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark - UIImagePickerController
+
 - (IBAction)addProfilePicture:(UIButton *)sender {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.delegate = self;
@@ -51,13 +55,39 @@
 
 }
 
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{ // "didFinishMediaWithInfo" means what happens when the photo is chosen
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{ // "didFinishMediaWithInfo" means what happens when the photo is chosen (it's also the protocol method)
     
     self.profilePicture.image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [self dismissViewControllerAnimated:YES completion:nil];
     
     
 }
+
+#pragma mark - PickerView 
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return 2;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component{
+    NSString *title; // another way to do this would be to have multiple returns but it is not best practice
+    if (row == 0){
+        title = @"Casual Movie Critic";
+    
+    }else if (row ==1){
+        title = @"Movie Critic";
+    }
+    return title;
+}
+
+
+
 @end
 
 

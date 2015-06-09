@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignUpViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> //protocols this view controller must conform to for UIImagePickerController
+@interface SignUpViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource> //protocols this view controller must conform to for UIImagePickerController
 
 @end
