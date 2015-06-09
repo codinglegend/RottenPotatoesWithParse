@@ -19,7 +19,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // [Optional] Power your app with Local Datastore. For more info, go to *removed hyperlink"
+   
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"QcIsINiaBBWOycQa3tNklmo8Nyic2bNOHzgbzjFj"
+                  clientKey:@"Q6khdESF3VhBzruJ3GPVyNbJcRohhLIyxvFxBzvq"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // ...
     return YES;
 }
 
@@ -44,8 +55,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+
 }
+
+
 
 
 

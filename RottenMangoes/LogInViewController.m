@@ -8,6 +8,7 @@
 
 #import "LogInViewController.h"
 
+
 @interface LogInViewController ()
 
 @end
@@ -16,6 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        //
+        if (error) {
+            NSLog(@"error in saveInBackround is %@", error);
+        }
+        if (succeeded){
+            NSLog(@"Succeeded is: %@", succeeded ? @"True" : @"False");
+        }
+        
+    }];
+
     // Do any additional setup after loading the view.
 }
 
