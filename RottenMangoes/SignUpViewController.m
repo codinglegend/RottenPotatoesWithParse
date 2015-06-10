@@ -27,8 +27,7 @@
     // Do any additional setup after loading the view.
     self.criticTypePickerView.delegate = self;
     
-//    PFObject *username = [PFObject objectWithClassName:@"Username"];
-//    [username setObject:<#(id)#> forKey:<#(NSString *)#>];
+
 }
 
 
@@ -110,7 +109,30 @@
                                               otherButtonTitles: nil];
         
         [alertView show]; // getting the alertView to actually show up
-    }
+    }else{
+        PFUser *newUser = [PFUser user];
+        newUser.username = self.usernameTextField.text; // this has nothing to do with username defined above. username here is a property of PFUser that you can find on the Parse API Reference/Documentation
+        newUser.password = self.passwordTextField.text;
+        newUser.email = self.emailTextField.text;
+        
+        [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
+            if (error) {
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sorry"
+                                                                    message:[error.userInfo objectForKey:@"error"]
+                                                                  delegate:nil
+                                                         cancelButtonTitle:@"OK"
+                                                         otherButtonTitles:nil];
+                [alertView show]; // without this line it says *alertView is an unused variable
+            }else{
+                [self.navigationController popToRootViewControllerAnimated:YES];
+            }
+            
+            
+         
+        }]; // was missing this initially, pay more attention
+            
+        }
+        
     
 }
 
