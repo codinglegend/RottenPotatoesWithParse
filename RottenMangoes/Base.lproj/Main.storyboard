@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NPi-jg-0HK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -209,18 +210,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yNk-PJ-w1M">
-                                <rect key="frame" x="145" y="55" width="310" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yNk-PJ-w1M">
+                                <rect key="frame" x="50" y="70" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTg-wM-vVY">
-                                <rect key="frame" x="145" y="113" width="310" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTg-wM-vVY">
+                                <rect key="frame" x="50" y="120" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-uQ-hKr">
-                                <rect key="frame" x="277" y="500" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-uQ-hKr">
+                                <rect key="frame" x="20" y="472" width="560" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -228,13 +229,13 @@
                                     <action selector="signUpWasPressed:" destination="6BX-vL-GbE" eventType="touchUpInside" id="OTS-ce-kBF"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bO2-Ws-KTu">
-                                <rect key="frame" x="145" y="164" width="310" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bO2-Ws-KTu">
+                                <rect key="frame" x="50" y="170" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAR-1M-tP7">
-                                <rect key="frame" x="250" y="379" width="128" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAR-1M-tP7">
+                                <rect key="frame" x="20" y="342" width="560" height="30"/>
                                 <state key="normal" title="Add Profile Picture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -242,20 +243,44 @@
                                     <action selector="addProfilePicture:" destination="6BX-vL-GbE" eventType="touchUpInside" id="Bqd-vO-evX"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Bj3-Fi-etJ">
-                                <rect key="frame" x="267" y="411" width="75" height="72"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Bj3-Fi-etJ">
+                                <rect key="frame" x="267" y="380" width="75" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Bj3-Fi-etJ" secondAttribute="height" multiplier="25:24" id="PdG-jR-mIK"/>
+                                    <constraint firstAttribute="width" constant="75" id="ivL-So-ikw"/>
+                                    <constraint firstAttribute="height" constant="72" id="kwC-eH-CA0"/>
+                                </constraints>
                             </imageView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZ8-bN-wh3">
-                                <rect key="frame" x="0.0" y="202" width="600" height="162"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5P0-wr-twv">
-                                <rect key="frame" x="0.0" y="202" width="600" height="162"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZ8-bN-wh3">
+                                <rect key="frame" x="20" y="190" width="560" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bO2-Ws-KTu" firstAttribute="leading" secondItem="43j-7g-ssa" secondAttribute="leading" constant="50" id="0bi-H4-dHy"/>
+                            <constraint firstItem="yNk-PJ-w1M" firstAttribute="leading" secondItem="43j-7g-ssa" secondAttribute="leading" constant="50" id="4Fh-VO-gnK"/>
+                            <constraint firstItem="TTg-wM-vVY" firstAttribute="leading" secondItem="43j-7g-ssa" secondAttribute="leading" constant="50" id="4cg-2W-sfd"/>
+                            <constraint firstItem="yNk-PJ-w1M" firstAttribute="trailing" secondItem="43j-7g-ssa" secondAttribute="trailing" constant="-50" id="9Cl-Jg-rXl"/>
+                            <constraint firstItem="SZ8-bN-wh3" firstAttribute="leading" secondItem="43j-7g-ssa" secondAttribute="leading" constant="20" id="9Fo-jR-WRR"/>
+                            <constraint firstItem="SZ8-bN-wh3" firstAttribute="trailing" secondItem="43j-7g-ssa" secondAttribute="trailing" constant="-20" id="Feq-K7-Hsj"/>
+                            <constraint firstItem="SZ8-bN-wh3" firstAttribute="top" secondItem="bO2-Ws-KTu" secondAttribute="bottom" constant="-10" id="IIn-gN-NRI"/>
+                            <constraint firstItem="zIk-uQ-hKr" firstAttribute="top" secondItem="Bj3-Fi-etJ" secondAttribute="bottom" constant="20" id="ME5-CM-qHo"/>
+                            <constraint firstItem="TTg-wM-vVY" firstAttribute="trailing" secondItem="43j-7g-ssa" secondAttribute="trailing" constant="-50" id="Nxc-ig-sMc"/>
+                            <constraint firstItem="bO2-Ws-KTu" firstAttribute="top" secondItem="TTg-wM-vVY" secondAttribute="bottom" constant="20" id="QLV-jA-tne"/>
+                            <constraint firstItem="oAR-1M-tP7" firstAttribute="top" secondItem="SZ8-bN-wh3" secondAttribute="bottom" constant="-10" id="R9l-9y-P35"/>
+                            <constraint firstItem="bO2-Ws-KTu" firstAttribute="trailing" secondItem="43j-7g-ssa" secondAttribute="trailing" constant="-50" id="Wyw-xp-cxF"/>
+                            <constraint firstAttribute="centerX" secondItem="Bj3-Fi-etJ" secondAttribute="centerX" constant="-4.5" id="h7w-HI-ona"/>
+                            <constraint firstItem="Bj3-Fi-etJ" firstAttribute="top" secondItem="oAR-1M-tP7" secondAttribute="bottom" constant="8" id="iQ3-6R-soT"/>
+                            <constraint firstItem="zIk-uQ-hKr" firstAttribute="trailing" secondItem="43j-7g-ssa" secondAttribute="trailing" constant="-20" id="nxx-DY-44K"/>
+                            <constraint firstItem="TTg-wM-vVY" firstAttribute="top" secondItem="yNk-PJ-w1M" secondAttribute="bottom" constant="20" id="qYx-iZ-IMW"/>
+                            <constraint firstItem="zIk-uQ-hKr" firstAttribute="leading" secondItem="43j-7g-ssa" secondAttribute="leading" constant="20" id="r94-jL-QYa"/>
+                            <constraint firstItem="oAR-1M-tP7" firstAttribute="trailing" secondItem="43j-7g-ssa" secondAttribute="trailing" constant="-20" id="tzP-hC-WSz"/>
+                            <constraint firstItem="yNk-PJ-w1M" firstAttribute="top" secondItem="OdT-js-OJe" secondAttribute="bottom" constant="50" id="xJP-ZX-Avs"/>
+                            <constraint firstItem="oAR-1M-tP7" firstAttribute="leading" secondItem="43j-7g-ssa" secondAttribute="leading" constant="20" id="yzg-6Y-h0x"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="criticTypePickerView" destination="5P0-wr-twv" id="til-3B-SAU"/>
+                        <outlet property="criticTypePickerView" destination="SZ8-bN-wh3" id="GT6-L3-Dqb"/>
                         <outlet property="emailTextField" destination="bO2-Ws-KTu" id="dgc-FN-UoN"/>
                         <outlet property="passwordTextField" destination="TTg-wM-vVY" id="J7N-fT-HxH"/>
                         <outlet property="profilePicture" destination="Bj3-Fi-etJ" id="u2Z-kr-4E8"/>
